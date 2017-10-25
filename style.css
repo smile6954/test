@@ -74,7 +74,6 @@ a {
 }
 .navbar__item a:hover {
   background-color: #23C892;
-  border-radius: 30px;
 }
  .navbar__toggle {
   width: 70px;
