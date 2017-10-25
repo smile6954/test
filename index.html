@@ -21,9 +21,7 @@
 		</div>
 		<div class="header__1">
 			<h1 class="header__title ">Вэб Дизайн и Разработка</h1>
-			<p class="header__slogan ">Studio based in Belarus. We have over 
-				15 years of combined experience, and know a thing or two 
-				about designing websites and mobile apps.
+			<p class="header__slogan ">Студия основана в Беларуси. У нас есть более 15-летний опыт работы, и знают вещь или два о проектировании веб-сайтов и мобильных приложений.
 			</p>
 			<button class="header__btn btn">Связаться с нами</button>
 		</div>		
@@ -32,59 +30,75 @@
 		<article class="about__text">
 			<h2 about__title>О нас</h2>
 			<p about__description>
-				The most impressive websites and app experiences are rooted in smart design, 
-				embody clear vision, and are backed by the right technology.
+				Самые впечатляющие веб-сайты и приложения, основанны на умном дизайне,<br> воплощают четкое видение и подкрепляются правильной технологией.
 			</p>
 		</article>	
-		<div class="about__skills">
-			<div class="about__skills">
-				
+		<div class="about__skills wrapper">
+			<div class="about__diagram">
+				<h3>Профессиональный уровень</h3>
+				<span>UI/UX Design    75%<br></span>
+				<svg width="100%" height="5">
+				    <line x1="20" y1="0" x2="550" y2="0" stroke="orange" stroke-width="2"/>
+				     <line x1="20" y1="0" x2="410" y2="0" stroke="green" stroke-width="3"/>
+				</svg> 
+				<span>web development    90% <br></span>
+				<svg width="100%" height="5">
+				    <line x1="20" y1="0" x2="550" y2="0" stroke="orange" stroke-width="2"/>
+				     <line x1="20" y1="0" x2="500" y2="0" stroke="green" stroke-width="3"/>
+				</svg> 				
+				<span>marketing    65%<br></span>
+				<svg width="100%" height="5">
+				    <line x1="20" y1="0" x2="750" y2="0" stroke="orange" stroke-width="2"/>
+				     <line x1="20" y1="0" x2="360" y2="0" stroke="green" stroke-width="3"/>
+				</svg> 				
+
 			</div>	
-			<div><img src="img/about.png"></div>	
+			<div class="about__img"><img src="img/about.png" ></div>				
 		</div>
-		<div class="about__stats">
-			<div class="stats__item"></div>
-			<div class="stats__item"></div>
-			<div class="stats__item"></div>
+		<div class="about__stats wrapper">
+			<div class="stats__item"> 548<br> проектов выполнено</div>
+			<div class="stats__item">1465<br> рабочих часов</div>
+			<div class="stats__item">612<br> позитивных отзывов</div>
+			<div class="stats__item">745<br> счастливых клиентов</div>
 		</div>		
 	</section>
 	<div class="works">
-		<img src="" alt="">
-		<img src="" alt="">
-		<img src="" alt="">
-		<img src="" alt="">
-		<img src="" alt="">
-		<img src="" alt="">
-		<img src="" alt="">
-		<img src="" alt="">
+		<img src="img/1.png" alt="">
+		<img src="img/2.png" alt="">
+		<img src="img/3.png" alt="">
+		<img src="img/4.png" alt="">
+		<img src="img/5.png" alt="">
+		<img src="img/6.png" alt="">
+		<img src="img/7.png" alt="">
+		<img src="img/8.png" alt="">
+		<a href="#">Весь список работ </a>
 	</div>
 	<section class="workprocess">
-		<h2 class="workprocess__title"></h2>
-		<p class="workprocess__description">Was years it seasons was there form he in 	in them together over that, 
-			third sixth gathered female creeping bearing behold years.
+		<h2 class="workprocess__title">Наш рабочий процесс</h2>
+		<p class="workprocess__description">Вот обычный рабочий день. Программист, придя на работу и заварив себе свежего кофе, <br>приступает к знакомству с новой задачей. Выяснив все подробности <br>и продумав будущее решение он меняет статус задачи...
 		</p>
-		<video src="#"></video>
+		<video src="https://youtu.be/1fvCKAMLCpU" controls preload="metadata" width="100%" height="400px" poster="img/1.png"></video>
 	</section>
 	<div class="testimonials">
 		<blockquote>
-			“ Outstanding job and exceeded all expectations. It was a pleasure 
-			to work with them on a sizable first project and am looking 
+			“ Outstanding job and exceeded all expectations. It was a pleasure <br>
+			to work with them on a sizable first project and am looking <br>
 			forward to start the next one asap.”
 		</blockquote>
 		<cite>
 			Michael Hopkins
 		</cite>		
 	</div>
-	<div class="contacts">
+	<div class="contacts wrapper">
 		<h2 class="contacts__title">Нужен проект?</h2>
-		<p>Let us know what you're looking for in an 	agency. We'll take a look and see 
+		<p>Let us know what you're looking for in an 	agency. We'll take a look and see <br>
 			if this could be the start of something beautiful.
 		</p>
 		<form>
 			<input type="text" name="name" placeholder="Ваше Имя">
-			<input type="email" name="Ваш Email">
-			<input type="text" name="title" placeholder="Ваша Должность">
-			<textarea name="comment">
+			<input type="email" name="Ваш Email" placeholder="Ваш Email"> <br><br>
+			<input type="text" id="input__title" name="title" placeholder="Ваша Должность" width="200px"><br><br><br>
+			<textarea name="comment" cols="80" rows="8">
 				Ваш комментарий
 			</textarea>
 
