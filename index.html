@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Web Design and develop</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="navbar navbar_closed">
+			<ul class="navbar__list">
+				<button class="navbar__toggle"></button>
+				<li class="navbar__item"><a href="#">Главная</a></li>
+				<li class="navbar__item"><a href="">О Нас</a></li>
+				<li class="navbar__item"><a href="">Работы</a></li>
+				<li class="navbar__item"><a href="">Процесс</a></li>
+				<li class="navbar__item"><a href="">Услуги</a></li>
+				<li class="navbar__item"><a href="">Рекомендации</a></li>
+				<li class="navbar__item"><a href="">Контакты</a></li>
+			</ul>
+		</div>
+		<div>
+			<h1 class="header__title">Вэб Дизайн и Разработка</h1>
+			<p header__slogan>Studio based in Belarus. We have over 
+				15 years of combined experience, and know a thing or two 
+				about designing websites and mobile apps.
+			</p>
+			<button class="btn">Связаться с нами</button>
+		</div>		
+	</header>
+	<section class="about">
+		<article class="about__text">
+			<h2 about__title>О нас</h2>
+			<p about__description>
+				The most impressive websites and app experiences are rooted in smart design, 
+				embody clear vision, and are backed by the right technology.
+			</p>
+		</article>	
+		<div class="about__skills">
+			<div class="about__skills">
+				
+			</div>	
+			<div><img src="img/about.png"></div>	
+		</div>
+		<div class="about__stats">
+			<div class="stats__item"></div>
+			<div class="stats__item"></div>
+			<div class="stats__item"></div>
+		</div>		
+	</section>
+	<div class="works">
+		<img src="" alt="">
+		<img src="" alt="">
+		<img src="" alt="">
+		<img src="" alt="">
+		<img src="" alt="">
+		<img src="" alt="">
+		<img src="" alt="">
+		<img src="" alt="">
+	</div>
+	<section class="workprocess">
+		<h2 class="workprocess__title"></h2>
+		<p class="workprocess__description">Was years it seasons was there form he in 	in them together over that, 
+			third sixth gathered female creeping bearing behold years.
+		</p>
+		<video src="#"></video>
+	</section>
+	<div class="testimonials">
+		<blockquote>
+			“ Outstanding job and exceeded all expectations. It was a pleasure 
+			to work with them on a sizable first project and am looking 
+			forward to start the next one asap.”
+		</blockquote>
+		<cite>
+			Michael Hopkins
+		</cite>		
+	</div>
+	<div class="contacts">
+		<h2 class="contacts__title">Нужен проект?</h2>
+		<p>Let us know what you're looking for in an 	agency. We'll take a look and see 
+			if this could be the start of something beautiful.
+		</p>
+		<form>
+			<input type="text" name="name" placeholder="Ваше Имя">
+			<input type="email" name="Ваш Email">
+			<input type="text" name="title" placeholder="Ваша Должность">
+			<textarea name="comment">
+				Ваш комментарий
+			</textarea>
+
+		</form>
+		
+	</div>
+	<footer>
+		<div class="copyright">
+			
+		</div>
+		<div class="phone">
+			
+		</div>
+		<div class="social">
+			
+		</div>
+		
+	</footer>
+		<script>
+		var navmain = document.querySelector ('.navbar');
+		var navtoggle = document.querySelector ('.navbar__toggle');
+		
+		navtoggle.addEventListener('click', function() {
+			if (navmain.classList.contains('navbar_closed')) {
+				navmain.classList.remove('navbar_closed');
+				navmain.classList.add('navbar_opened');
+			} else {
+				navmain.classList.remove('navbar_opened');
+				navmain.classList.add('navbar_closed');
+				
+			}
+		});
+
+	</script>	
+	
+</body>
+</html>
