@@ -6,6 +6,14 @@ body {
   font-family: 'ptsans', Arial, sans-serif;  
   font-style: normal;  
 }
+@media (min-width: 768px) {
+  
+  .wrapper {
+    width: 84%;
+    margin: 0 auto;
+    max-width: 1380px;
+  }  
+}
 img {
   max-width: 100%;
   height: auto;
@@ -17,20 +25,20 @@ ul {
 }
 a {
   text-decoration: none;
-  
+  font-weight: bold;
   cursor: pointer;
 }
 .btn {
   color: #fff;
   background-color: #4FC339;
   padding: 10px 15px;
+  font-size: 36px;
 }
 
 .header {
   width: 100%;
-  height: 100vh;
-  background-image: url(img/headerBg.png);
-  background-color: #4FC339;
+  height: 90vh;
+  background-image: url(img/headerBg.png);  
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -42,7 +50,7 @@ a {
 .header__slogan {
   font-size: 26px;
   line-height: 40px;
-  width: 90%;
+  width: 100%;
 }
 .navbar { 
   align-items: center;
@@ -84,7 +92,7 @@ a {
 .navbar__item a:hover {
   background-color: #23C892;
 }
- .navbar__toggle {
+.navbar__toggle {
   width: 70px;
   height: 50px;
   position: absolute;
@@ -100,18 +108,71 @@ a {
     background-color: #000;
     box-shadow: 0 8px 0 0 #000, 0 -8px 0 0 #000;
 }
-  .navbar_opened .navbar__toggle::before,
-  .navbar_opened .navbar__toggle::after {
+.navbar_opened .navbar__toggle::before,
+.navbar_opened .navbar__toggle::after {
     content: "";
     position: absolute;
     left: 17px;
     width: 36px;
     height: 2px;
     background-color: #000;
-  }
-  .navbar_opened .navbar__toggle::after {
+}
+.navbar_opened .navbar__toggle::after {
     transform: rotate(45deg);
-  }
-  .navbar_opened .navbar__toggle::before {
+}
+.navbar_opened .navbar__toggle::before {
     transform: rotate(-45deg);
+}
+@media (min-width: 1200px) {
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;    
+    background-size: cover;
+    align-items: flex-end;
   }
+  .header__1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 70%;
+  }
+  .header__title {    
+    width: 70%;    
+    font-size: 45px;    
+    padding-top: 170px;
+  }
+  .header__slogan {
+    width: 70%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    
+  }
+  .header__btn {
+
+  }
+  .navbar {
+    width: 70%;
+    float: right;
+  }
+  .navbar__toggle {
+      display: none;
+  }
+  .navbar .navbar__list {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .navbar .navbar__item {
+    display: block;
+    background-color: transparent;
+  }
+  .navbar .navbar__item a {
+    color: #000;
+  }
+  .navbar .navbar__item a:hover {
+    background-color: transparent;
+    color: green;
+  }
+
+}
