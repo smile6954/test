@@ -186,7 +186,7 @@ a {
     padding-bottom: 80px;
   }
   .about__diagram {
-    width: 40%;
+    width: 50%;
     height: 40vh;
     background-color: #F8F9F9;  
     text-align: left;      
@@ -199,7 +199,7 @@ a {
     padding: 20px;
   }
   .about__img {
-    width: 40%;
+    width: 50%;
     height: 40vh;    
   }
   .about__img img{
@@ -244,4 +244,8 @@ a {
 }
 #input__title {
   width: 70%;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
 }
