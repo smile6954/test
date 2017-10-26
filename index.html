@@ -2,16 +2,21 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Web Design and develop</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="css/pe-icon-7-stroke.css">
+	<link rel="stylesheet" href="css/helper.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:500|Nunito+Sans" rel="stylesheet">
+
 </head>
 <body>
-	<header class="header ">
+	<header class="header">
 		<div class="navbar navbar_closed">
 			<ul class="navbar__list wrapper">
 				<button class="navbar__toggle"></button>
 				<li class="navbar__item"><a href="#">Главная</a></li>
-				<li class="navbar__item"><a href="">О Нас</a></li>
+				<li class="navbar__item"><a href="#about us">О Нас</a></li>
 				<li class="navbar__item"><a href="">Работы</a></li>
 				<li class="navbar__item"><a href="">Процесс</a></li>
 				<li class="navbar__item"><a href="">Услуги</a></li>
@@ -23,11 +28,12 @@
 			<h1 class="header__title ">Вэб Дизайн и Разработка</h1>
 			<p class="header__slogan ">Студия основана в Беларуси. У нас есть более 15-летний опыт работы, и знают вещь или два о проектировании веб-сайтов и мобильных приложений.
 			</p>
-			<button class="header__btn btn">Связаться с нами</button>
+			<!-- <button class="header__btn btn"> --><a class="header__btn btn" href="#contacts">Связаться с нами</a><!-- </button> -->
 		</div>		
 	</header>
 	<section class="about">
 		<article class="about__text">
+			<a name="about us"></a>
 			<h2 about__title>О нас</h2>
 			<p about__description>
 				Самые впечатляющие веб-сайты и приложения, основанны на умном дизайне,<br> воплощают четкое видение и подкрепляются правильной технологией.
@@ -48,7 +54,7 @@
 				</svg> 				
 				<span>marketing    65%<br></span>
 				<svg width="100%" height="5">
-				    <line x1="20" y1="0" x2="750" y2="0" stroke="orange" stroke-width="2"/>
+				    <line x1="20" y1="0" x2="550" y2="0" stroke="orange" stroke-width="2"/>
 				     <line x1="20" y1="0" x2="360" y2="0" stroke="green" stroke-width="3"/>
 				</svg> 				
 
@@ -77,8 +83,31 @@
 		<h2 class="workprocess__title">Наш рабочий процесс</h2>
 		<p class="workprocess__description">Вот обычный рабочий день. Программист, придя на работу и заварив себе свежего кофе, <br>приступает к знакомству с новой задачей. Выяснив все подробности <br>и продумав будущее решение он меняет статус задачи...
 		</p>
-		<video src="https://youtu.be/1fvCKAMLCpU" controls preload="metadata" width="100%" height="400px" poster="img/1.png"></video>
+		<iframe src="https://www.youtube.com/embed/76wzB8-GB98" frameborder="0" gesture="media" allowfullscreen></iframe>
+		<!-- <video src="https://www.youtube.com/embed/76wzB8-GB98" controls preload="metadata" width="100%" height="400px" poster="img/1.png"></video> -->
+		<div class="apperance">
+			<div class="apperance__item">
+				<i class="pe-7s-diamond"></i>
+				<h4>ui / ux design</h4>
+				<p>Be set fourth land god darkness  make it wherein own</p>
+			</div>
+			<div class="apperance__item"><i class="pe-7s-phone"></i>
+				<h4>app / mobile</h4>
+				<p>Dominion man second spirit he, earth they're creeping</p>
+			</div>
+			<div class="apperance__item"><i class="pe-7s-plane"></i>
+				<h4>SEO / marketing</h4>
+				<p>Give won't after land fill creeping  meat you, may</p>
+			</div>
+			<div class="apperance__item"><i class="pe-7s-magic-wand"></i>
+				<h4>graphic design</h4>
+				<p>Open, great whales air rule for,  fourth life whales</p>
+			</div>
+			
+
+		</div>
 	</section>
+
 	<div class="testimonials">
 		<blockquote>
 			“ Outstanding job and exceeded all expectations. It was a pleasure <br>
@@ -89,17 +118,27 @@
 			Michael Hopkins
 		</cite>		
 	</div>
-	<div class="contacts wrapper">
-		<h2 class="contacts__title">Нужен проект?</h2>
+	<div class="pines wrapper">
+		<img src="img/pineapple.png" alt="" class="pines__item" height="60px">
+		<img src="img/pineapple-2.png" alt="" class="pines__item" height="60px">
+		<img src="img/pineapple.png" alt="" class="pines__item" height="60px">
+		<img src="img/pineapple-2.png" alt="" class="pines__item" height="60px">	
+	</div>
+	
+
+
+	<div class="contacts">
+		<a name="contacts"></a>
+		<h2 class="contacts__title">Need a project?</h2>
 		<p>Let us know what you're looking for in an 	agency. We'll take a look and see <br>
 			if this could be the start of something beautiful.
 		</p>
-		<form>
+		<form class="contacts__form wrapper" name="contacts">
 			<input type="text" name="name" placeholder="Ваше Имя">
-			<input type="email" name="Ваш Email" placeholder="Ваш Email"> <br><br>
-			<input type="text" id="input__title" name="title" placeholder="Ваша Должность" width="200px"><br><br><br>
-			<textarea name="comment" cols="80" rows="8">
-				Ваш комментарий
+			<input type="email" name="your__email" placeholder="Ваш Email"> 
+			<input type="text"  name="title" placeholder="Ваша Должность" width="200px">
+			<textarea placeholder="Ваш комментарий" rows="5">
+				
 			</textarea><br>
 			<button class="btn">Отправить</button>
 
@@ -108,20 +147,20 @@
 	</div>
 	<hr>
 	<footer class="footer wrapper">
-		<div class="copyright">
-			<img src="img/logo.png" alt="logo" width="180px"><br>
-			@ 2017 D&L  lmt. All rights reserved
-		</div>
+		
 		<div class="phone">
 			hello@pirolltheme.com<br>
 			+44 987 065 908 
 		</div>
 		<div class="social">
-			<a href="#">Твитер</a>
-			<a href="#">ВК</a>
-			<a href="#">Ютуб</a>
+			<a href="#"><img src="img/twitter.png" alt=""></a>
+			<a href="#"><img src="img/facebook.png" alt=""></a>
+			<a href="#"><img src="img/skype.png" alt=""></a>
 		</div>
-		
+		<div class="copyright">
+			<img src="img/logo.png" alt="logo" width="75px"><br>
+			@ 2017 D&L  lmt. All rights reserved
+		</div>
 	</footer>
 		<script>
 		var navmain = document.querySelector ('.navbar');
@@ -138,7 +177,9 @@
 			}
 		});
 
-	</script>	
+		</script>	
 	
 </body>
 </html>
+
+
