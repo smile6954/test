@@ -26,7 +26,7 @@
 			<h1 class="header__title ">Вэб Дизайн и Разработка</h1>
 			<p class="header__slogan ">Студия основана в Беларуси. У нас есть более 15-летний опыт работы, и знают вещь или два о проектировании веб-сайтов и мобильных приложений.
 			</p>
-			<button class="header__btn btn">Связаться с нами</button>
+			<!-- <button class="header__btn btn"> --><a class="header__btn btn" href="#contacts">Связаться с нами</a><!-- </button> -->
 		</div>		
 	</header>
 	<section class="about">
@@ -80,7 +80,8 @@
 		<h2 class="workprocess__title">Наш рабочий процесс</h2>
 		<p class="workprocess__description">Вот обычный рабочий день. Программист, придя на работу и заварив себе свежего кофе, <br>приступает к знакомству с новой задачей. Выяснив все подробности <br>и продумав будущее решение он меняет статус задачи...
 		</p>
-		<video src="https://youtu.be/1fvCKAMLCpU" controls preload="metadata" width="100%" height="400px" poster="img/1.png"></video>
+		<iframe src="https://www.youtube.com/embed/76wzB8-GB98" frameborder="0" gesture="media" allowfullscreen></iframe>
+		<!-- <video src="https://www.youtube.com/embed/76wzB8-GB98" controls preload="metadata" width="100%" height="400px" poster="img/1.png"></video> -->
 		<div class="apperance">
 			<div class="apperance__item">
 				<i class="pe-7s-diamond"></i>
@@ -114,17 +115,27 @@
 			Michael Hopkins
 		</cite>		
 	</div>
-	<div class="contacts wrapper">
-		<h2 class="contacts__title">Нужен проект?</h2>
+	<div class="pines wrapper">
+		<img src="img/pineapple.png" alt="" class="pines__item" height="60px">
+		<img src="img/pineapple-2.png" alt="" class="pines__item" height="60px">
+		<img src="img/pineapple.png" alt="" class="pines__item" height="60px">
+		<img src="img/pineapple-2.png" alt="" class="pines__item" height="60px">	
+	</div>
+	
+
+
+	<div class="contacts">
+		<a name="contacts"></a>
+		<h2 class="contacts__title">Need a project?</h2>
 		<p>Let us know what you're looking for in an 	agency. We'll take a look and see <br>
 			if this could be the start of something beautiful.
 		</p>
-		<form>
+		<form class="contacts__form wrapper" name="contacts">
 			<input type="text" name="name" placeholder="Ваше Имя">
-			<input type="email" name="Ваш Email" placeholder="Ваш Email"> <br><br>
-			<input type="text" id="input__title" name="title" placeholder="Ваша Должность" width="200px"><br><br><br>
-			<textarea name="comment" cols="80" rows="8">
-				Ваш комментарий
+			<input type="email" name="your__email" placeholder="Ваш Email"> 
+			<input type="text"  name="title" placeholder="Ваша Должность" width="200px">
+			<textarea placeholder="Ваш комментарий" rows="5">
+				
 			</textarea><br>
 			<button class="btn">Отправить</button>
 
@@ -133,20 +144,20 @@
 	</div>
 	<hr>
 	<footer class="footer wrapper">
-		<div class="copyright">
-			<img src="img/logo.png" alt="logo" width="180px"><br>
-			@ 2017 D&L  lmt. All rights reserved
-		</div>
+		
 		<div class="phone">
 			hello@pirolltheme.com<br>
 			+44 987 065 908 
 		</div>
 		<div class="social">
-			<a href="#">Твитер</a>
-			<a href="#">ВК</a>
-			<a href="#">Ютуб</a>
+			<a href="#"><img src="img/twitter.png" alt=""></a>
+			<a href="#"><img src="img/facebook.png" alt=""></a>
+			<a href="#"><img src="img/skype.png" alt=""></a>
 		</div>
-		
+		<div class="copyright">
+			<img src="img/logo.png" alt="logo" width="75px"><br>
+			@ 2017 D&L  lmt. All rights reserved
+		</div>
 	</footer>
 		<script>
 		var navmain = document.querySelector ('.navbar');
@@ -163,7 +174,9 @@
 			}
 		});
 
-	</script>	
+		</script>	
 	
 </body>
 </html>
+
+
