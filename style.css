@@ -5,16 +5,12 @@ body {
   line-height: 27px;
   font-family: 'Nunito Sans', Arial, sans-serif;  
   font-style: normal;
-
 }
 .wrapper {
-      margin: 0 auto;
-      max-width: 1380px;
-    }  
-  @media (min-width: 768px) {
-    
-    
-  }
+  margin: 0 auto;
+  max-width: 1380px;
+}  
+  
 img {
   max-width: 100%;
   height: auto;
@@ -42,6 +38,8 @@ a, a:visited {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+  position: relative;
+
 }
 
 
@@ -104,13 +102,13 @@ a, a:visited {
   top: 0; 
 }
 .navbar_closed .navbar__toggle::after {
-    content: "";
-    position: absolute;
-    left: 17px;
-    width: 36px;
-    height: 2px;
-    background-color: #000;
-    box-shadow: 0 8px 0 0 #000, 0 -8px 0 0 #000;
+  content: "";
+  position: absolute;
+  left: 17px;
+  width: 36px;
+  height: 2px;
+  background-color: #000;
+  box-shadow: 0 8px 0 0 #000, 0 -8px 0 0 #000;
 }
 .navbar_opened .navbar__toggle::before,
 .navbar_opened .navbar__toggle::after {
@@ -126,6 +124,9 @@ a, a:visited {
 }
 .navbar_opened .navbar__toggle::before {
     transform: rotate(-45deg);
+}
+svg {
+  display: none;
 }
 .apperance{
   margin-top: 20px;
@@ -151,101 +152,100 @@ a, a:visited {
   font-family: 'Nunito Sans', Arial, sans-serif;
   color: #797979;
 }
+/*навигация для 1200пикс*/
+  @media (min-width: 1200px) {
+    .header {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;    
+      background-size: cover;
+      align-items: flex-end;
+    }
+    .header__1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      width: 70%;
+    }
+    .header__title {    
+      width: 70%;    
+      font-size: 45px;    
+      padding-top: 170px;
+    }
+    .header__slogan {
+      width: 70%;
+      padding-top: 70px;
+      padding-bottom: 70px;
+      
+    }
+    .header__btn a{
+      
+    }
+    .navbar {
+      width: 70%;
+      float: right;
+    }
+    .navbar__toggle {
+        display: none;
+    }
+    .navbar .navbar__list {
+      display: flex;
+      justify-content: flex-start;
+    }
+    .navbar .navbar__item {
+      display: block;
+      background-color: transparent;
+    }
+    .navbar .navbar__item a {
+      color: #000;
+    }
+    .navbar .navbar__item a:hover {
+      background-color: transparent;
+      color: green;
+    }
 
-@media (min-width: 1200px) {
-  .header {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;    
-    background-size: cover;
-    align-items: flex-end;
   }
-  .header__1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 70%;
-  }
-  .header__title {    
-    width: 70%;    
-    font-size: 45px;    
-    padding-top: 170px;
-  }
-  .header__slogan {
-    width: 70%;
-    padding-top: 70px;
-    padding-bottom: 70px;
-    
-  }
-  .header__btn a{
-    
-  }
-  .navbar {
-    width: 70%;
-    float: right;
-  }
-  .navbar__toggle {
-      display: none;
-  }
-  .navbar .navbar__list {
-    display: flex;
-    justify-content: flex-start;
-  }
-  .navbar .navbar__item {
-    display: block;
-    background-color: transparent;
-  }
-  .navbar .navbar__item a {
-    color: #000;
-  }
-  .navbar .navbar__item a:hover {
-    background-color: transparent;
-    color: green;
-  }
-
-}
 .about {
   text-align: center;
 }
-@media (min-width: 768px) {
-  .about__skills {
+  @media (min-width: 768px) {
+    .about__skills {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 70px;
+      padding-bottom: 80px;
+    }
+    .about__diagram {
+      width: 45%;
+      height: 40vh;
+      background-color: #F8F9F9;  
+      text-align: left;      
+    }
+    .about__diagram h3 {
+      padding-left: 20px;
+    }
+    .about__diagram span {
+      display: block;
+      padding: 20px;
+    }
+    .about__img {
+      width: 50%;
+      height: 40vh;    
+    }
+    .about__img img{
+      width: 100%;
+      height: 40vh;    
+    }  
+  }
+
+  @media (min-width: 768px) { 
+    .about__stats {
     display: flex;
-    padding-top: 70px;
-    padding-bottom: 80px;
+    justify-content: space-between;
+    padding: 80px 0;
+    }
   }
-  .about__diagram {
-    width: 50%;
-    height: 40vh;
-    background-color: #F8F9F9;  
-    text-align: left;      
-  }
-  .about__diagram h3 {
-    padding-left: 20px;
-  }
-  .about__diagram span {
-    display: block;
-    padding: 20px;
-  }
-  .about__img {
-    width: 50%;
-    height: 40vh;    
-  }
-  .about__img img{
-    width: 100%;
-    height: 40vh;    
-  }  
-}
-.about__stats {
-  
-}
-@media (min-width: 768px) { 
-  .about__stats {
-  display: flex;
-  justify-content: space-between;
-  padding: 80px 0;
-  }
-}
 .works {
   width: 100%;
   text-align: center;
