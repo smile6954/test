@@ -13,15 +13,15 @@
 <body>
 	<header class="header">
 		<div class="navbar navbar_closed">
-			<ul class="navbar__list wrapper">
+			<ul class="navbar__list">
 				<button class="navbar__toggle"></button>
 				<li class="navbar__item"><a href="#">Главная</a></li>
-				<li class="navbar__item"><a href="#about us">О Нас</a></li>
-				<li class="navbar__item"><a href="">Работы</a></li>
-				<li class="navbar__item"><a href="">Процесс</a></li>
-				<li class="navbar__item"><a href="">Услуги</a></li>
-				<li class="navbar__item"><a href="">Рекомендации</a></li>
-				<li class="navbar__item"><a href="">Контакты</a></li>
+				<li class="navbar__item"><a href="#about_us">О Нас</a></li>
+				<li class="navbar__item"><a href="#our_works">Работы</a></li>
+				<li class="navbar__item"><a href="#process">Процесс</a></li>
+				<li class="navbar__item"><a href="#">Услуги</a></li>
+				<li class="navbar__item"><a href="#">Рекомендации</a></li>
+				<li class="navbar__item"><a href="#contacts">Контакты</a></li>
 			</ul>
 		</div>
 		<div class="header__1">
@@ -31,9 +31,11 @@
 			<!-- <button class="header__btn btn"> --><a class="header__btn btn" href="#contacts">Связаться с нами</a><!-- </button> -->
 		</div>		
 	</header>
+	
 	<section class="about">
+		
 		<article class="about__text">
-			<a name="about us"></a>
+			<a name="about_us"></a>
 			<h2 about__title>О нас</h2>
 			<p about__description>
 				Самые впечатляющие веб-сайты и приложения, основанны на умном дизайне,<br> воплощают четкое видение и подкрепляются правильной технологией.
@@ -43,17 +45,17 @@
 			<div class="about__diagram">
 				<h3>Профессиональный уровень</h3>
 				<span>UI/UX Design    75%<br></span>
-				<svg width="100%" height="5">
+				<svg width="50%" height="5">
 				    <line x1="20" y1="0" x2="550" y2="0" stroke="orange" stroke-width="2"/>
 				     <line x1="20" y1="0" x2="410" y2="0" stroke="green" stroke-width="3"/>
 				</svg> 
 				<span>web development    90% <br></span>
-				<svg width="100%" height="5">
+				<svg width="50%" height="5">
 				    <line x1="20" y1="0" x2="550" y2="0" stroke="orange" stroke-width="2"/>
 				     <line x1="20" y1="0" x2="500" y2="0" stroke="green" stroke-width="3"/>
 				</svg> 				
 				<span>marketing    65%<br></span>
-				<svg width="100%" height="5">
+				<svg width="50%" height="5">
 				    <line x1="20" y1="0" x2="550" y2="0" stroke="orange" stroke-width="2"/>
 				     <line x1="20" y1="0" x2="360" y2="0" stroke="green" stroke-width="3"/>
 				</svg> 				
@@ -69,6 +71,8 @@
 		</div>		
 	</section>
 	<div class="works">
+		<a name="our_works"></a>
+		<h1>Наши работы</h1>
 		<img src="img/1.png" alt="">
 		<img src="img/2.png" alt="">
 		<img src="img/3.png" alt="">
@@ -80,6 +84,7 @@
 		<a href="#">Весь список работ </a>
 	</div>
 	<section class="workprocess">
+		<a name="process"></a>
 		<h2 class="workprocess__title">Наш рабочий процесс</h2>
 		<p class="workprocess__description">Вот обычный рабочий день. Программист, придя на работу и заварив себе свежего кофе, <br>приступает к знакомству с новой задачей. Выяснив все подробности <br>и продумав будущее решение он меняет статус задачи...
 		</p>
@@ -151,6 +156,7 @@
 		<div class="phone">
 			hello@pirolltheme.com<br>
 			+44 987 065 908 
+			<a name="contacts"></a>
 		</div>
 		<div class="social">
 			<a href="#"><img src="img/twitter.png" alt=""></a>

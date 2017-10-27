@@ -152,7 +152,7 @@ svg {
   font-family: 'Nunito Sans', Arial, sans-serif;
   color: #797979;
 }
-/*навигация для 1200пикс*/
+/*навигация и хедер для 1200пикс*/
   @media (min-width: 1200px) {
     .header {
       display: flex;
@@ -177,21 +177,18 @@ svg {
       width: 70%;
       padding-top: 70px;
       padding-bottom: 70px;
-      
-    }
-    .header__btn a{
-      
     }
     .navbar {
-      width: 70%;
-      float: right;
-    }
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 20px;
+      }
     .navbar__toggle {
-        display: none;
+      display: none;
     }
     .navbar .navbar__list {
       display: flex;
-      justify-content: flex-start;
+      justify-content: flex-end;
     }
     .navbar .navbar__item {
       display: block;
@@ -204,26 +201,33 @@ svg {
       background-color: transparent;
       color: green;
     }
-
+    .header__slogan{
+      text-align: left;
+    }
   }
 .about {
   text-align: center;
 }
+/*About под 768*/
   @media (min-width: 768px) {
     .about__skills {
       display: flex;
-      justify-content: space-between;
-      padding-top: 70px;
-      padding-bottom: 80px;
+      flex-direction: column; 
+      align-items: center;
     }
     .about__diagram {
-      width: 45%;
-      height: 40vh;
+      width: 100%;
+      /* height: 40vh; */
       background-color: #F8F9F9;  
-      text-align: left;      
+      text-align: center;      
+    }
+    .about__diagram svg{
+      margin-left: auto;
+      margin-right: auto;
     }
     .about__diagram h3 {
       padding-left: 20px;
+      text-align: center;
     }
     .about__diagram span {
       display: block;
@@ -231,24 +235,54 @@ svg {
     }
     .about__img {
       width: 50%;
-      height: 40vh;    
+      margin-top: 10px;
+        
     }
     .about__img img{
       width: 100%;
       height: 40vh;    
     }  
-  }
-
-  @media (min-width: 768px) { 
     .about__stats {
-    display: flex;
-    justify-content: space-between;
-    padding: 80px 0;
+      display: flex;
+      justify-content: space-around;
+      margin: 40px 5px 20px 5px;
+    }
+    svg{
+      display:block;
+    }
+    
+  }
+ /*About под 1200*/ 
+  @media (min-width: 1200px){
+    .about{
+      margin: 10px;
+    }
+    .about__skills{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 10px 10px;
+      background-color: #F8F9F9;
+    }
+    .about__diagram{
+      width: 70%;
+    }
+    .about__diagram svg{
+      text-align: left;
+      margin-left: 5px;
+      width: 100%;
+    }
+
+    .about__img{
+      width: 30%;
+      margin: 0;
     }
   }
+  
 .works {
   width: 100%;
   text-align: center;
+  margin: 0;
 }
 .works img {
   width: 24%;
@@ -262,10 +296,30 @@ svg {
 .workprocess {
   text-align: center;
 }
+a[name=our_works]{
+  height:0px;
+  padding: 0;
+}
+/*галлерея под 1200*/
+  @media (min-width: 1200px){
+    .works{
+      width: 70%;
+      text-align: center;
+      margin: 40px auto;
+      padding: 0;
+    }
+  }
 iframe{
   width: 80%;
   height: 400px;
 }
+/*видео под 1200*/
+  @media (min-width: 1200px){
+    iframe{
+      width: 50%;
+      height: 600px;
+    }   
+  }
 .testimonials {
   text-align: center;
   color: #fff;
@@ -283,6 +337,13 @@ iframe{
 .pines__item{
   margin: 0 15px;
 }
+  @media (min-width: 1200px){
+    .pines{
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  }
 .contacts {
   display: flex;
   flex-direction: column;
