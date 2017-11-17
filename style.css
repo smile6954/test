@@ -12,7 +12,7 @@ body {
 }  
   
 img {
-  max-width: 100%;
+  max-width: 99%;
   height: auto;
 }
 ul {
@@ -33,7 +33,7 @@ a, a:visited {
 }
 
 .header {
-  width: 100%;
+  width: 99%;
   background-image: url(img/headerBg.jpg);  
   background-repeat: no-repeat;
   background-size: cover;
